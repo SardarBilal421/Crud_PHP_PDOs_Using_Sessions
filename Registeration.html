@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Foam</title>
+</head>
+<style>
+    input{
+        padding: 10px;
+        border-radius: 15px;
+        opacity: 0.8;
+
+    }
+    label{
+        color: white;
+        text-decoration: white;
+    }
+
+</style>
+<body >
+<h1 style="font-family: Gabriola;color: white;"> <center>Registeration Foam</center></h1>
+    <form id="s1" style="width: 30%; margin-left: 35%;margin-right: 35%; position: relative; " action=./Foamcode.php method="post"  >
+        <table style="position: absolute;">
+            <tr>
+                <td><input type="text" id="fname" name="fname" placeholder="First Name"><br><br></td>
+                <td><input type="text" id="lname" name="lname" placeholder="Last Name"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="admin">Admin</label>
+                   <input type="radio" id="admin" name="accountType" value="admin"></td>
+               <td> <label for="user">User</label>
+                <input type="radio" id="user" name="accountType" value="user"></td>
+            </tr>
+            <tr >
+                <td colspan="2" ><input type="text" id="phone" name="phone" placeholder="Phone" style="width: 100%;"><br><br></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" id="email" name="email" placeholder="Email" style="width: 100%;"><br><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="password" id="password" name="password" placeholder="Password" style="width: 100%;"><br><br></td>
+            </tr>
+           <tr><td><input type="submit" value="Register" style="opacity: 1;"></td></tr>
+           </table>
+</form>
+</body>
+</html>
